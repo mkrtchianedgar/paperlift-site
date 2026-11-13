@@ -102,9 +102,9 @@ li { margin-bottom: 4px; }
 .lede { font-size: 1.25rem; color: var(--ink); }
 .meta { color: var(--ink2); font-size: 0.9375rem; }
 /* Ruled lines every 32 px, only where text sits on the lines (hero) */
-.ruled { background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 31px, var(--rule) 31px, var(--rule) 32px); line-height: 32px; }
-.ruled h1 { line-height: 64px; margin: 0; }
-.ruled p { margin: 0 0 32px; }
+.ruled { background-image: repeating-linear-gradient(to bottom, transparent 0, transparent calc(2rem - 1px), var(--rule) calc(2rem - 1px), var(--rule) 2rem); line-height: 2rem; }
+.ruled h1 { line-height: 4rem; margin: 0; }
+.ruled p { margin: 0 0 2rem; }
 
 /* Hero */
 .hero { text-align: left; }
@@ -130,5 +130,6 @@ th { font-weight: 600; }
 
 .site-foot { padding: 0 0 48px; color: var(--ink2); font-size: 0.875rem; }
 .site-foot .wrap { display: flex; flex-wrap: wrap; gap: 8px 16px; }
-.site-foot a { color: var(--ink2); }
+.site-foot a { color: var(--ink2); display: inline-block; padding: 8px 0; }
 .table-scroll table { min-width: 560px; }
+.site-foot span { display: inline-block; padding: 8px 0; }
