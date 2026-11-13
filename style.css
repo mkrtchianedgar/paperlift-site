@@ -1,0 +1,134 @@
+/* Paperlift website. Tokens from docs/design/design-system.md (Notebook theme).
+   Wordmark: Newsreader (SIL OFL, self-hosted, fonts/OFL.txt).
+   Text: the visitor's own system fonts (no Apple fonts are hosted here). */
+
+@font-face {
+  font-family: "Newsreader";
+  src: url("/fonts/newsreader.woff") format("woff");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --paper: #F7F4EC;
+  --card: #FFFFFF;
+  --ink: #1F2A44;
+  --ink2: #5A6274;
+  --rule: #E9E3D3;
+  --margin: #D64541;
+  --fill: #EFE9DA;
+  --serif: ui-serif, "New York", Georgia, "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mark: "Newsreader", Georgia, serif;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #15181E;
+    --card: #1E222A;
+    --ink: #F2EEE4;
+    --ink2: #A3A8B4;
+    --rule: #2C313B;
+    --margin: #EE6A63;
+    --fill: #2A2F38;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root { --ink2: var(--ink); }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.0625rem; /* 17 px body */
+  line-height: 1.5;
+}
+
+a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; border-radius: 4px; }
+
+.skip {
+  position: absolute; left: -9999px; top: 8px;
+  background: var(--card); padding: 8px 16px; border-radius: 999px;
+}
+.skip:focus { left: 16px; }
+
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+
+/* Header */
+.site-head { padding: 24px 0 8px; }
+.site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; min-height: 44px; }
+.brand img { width: 40px; height: 40px; border-radius: 9px; }
+.wordmark { font-family: var(--mark); font-weight: 600; font-size: 1.5rem; letter-spacing: -0.01em; }
+.site-nav { display: flex; gap: 16px; }
+.site-nav a { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink2); text-decoration: none; font-size: 0.9375rem; }
+.site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--ink); text-decoration: underline; }
+
+/* Page card: white page, red margin line at 44 px, ruled lines every 32 px */
+.page {
+  position: relative;
+  background-color: var(--card);
+  border-radius: 22px;
+  padding: 32px 24px 40px 68px;
+  margin: 24px 0 32px;
+}
+.page::before {
+  content: "";
+  position: absolute; top: 0; bottom: 0; left: 44px;
+  width: 1.5px; background: var(--margin); opacity: 0.75;
+}
+@media (max-width: 480px) {
+  .page { padding: 32px 16px 32px 56px; }
+  .page::before { left: 40px; }
+}
+
+h1, h2, h3 { font-family: var(--serif); color: var(--ink); line-height: 1.2; }
+h1 { font-size: 2.125rem; font-weight: 700; margin: 0 0 8px; }
+h2 { font-size: 1.375rem; font-weight: 600; margin: 32px 0 8px; }
+h3 { font-size: 1.0625rem; font-weight: 600; margin: 24px 0 4px; }
+p, ul, ol, table { margin: 0 0 16px; }
+li { margin-bottom: 4px; }
+.lede { font-size: 1.25rem; color: var(--ink); }
+.meta { color: var(--ink2); font-size: 0.9375rem; }
+/* Ruled lines every 32 px, only where text sits on the lines (hero) */
+.ruled { background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 31px, var(--rule) 31px, var(--rule) 32px); line-height: 32px; }
+.ruled h1 { line-height: 64px; margin: 0; }
+.ruled p { margin: 0 0 32px; }
+
+/* Hero */
+.hero { text-align: left; }
+.hero .icon { width: 120px; height: 120px; border-radius: 27px; display: block; margin: 0 0 8px; } /* 128 px = 4 ruled lines */
+.hero h1 { font-family: var(--mark); font-weight: 600; font-size: 3rem; letter-spacing: -0.015em; }
+
+/* Tally of five: four strokes, the fifth crossing in margin red */
+.tally { display: block; width: 72px; height: 40px; margin: 16px 0 8px; } /* 64 px = 2 ruled lines */
+.tally line { stroke-linecap: round; stroke-width: 4; }
+.tally .ink { stroke: var(--ink); }
+.tally .cross { stroke: var(--margin); }
+
+.pill {
+  display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px;
+  border-radius: 999px; background: var(--fill); color: var(--ink);
+  font-weight: 600; font-size: 0.9375rem; text-decoration: none;
+}
+
+table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
+th, td { text-align: left; vertical-align: top; padding: 8px 8px 8px 0; border-bottom: 1px solid var(--rule); }
+th { font-weight: 600; }
+.table-scroll { overflow-x: auto; }
+
+.site-foot { padding: 0 0 48px; color: var(--ink2); font-size: 0.875rem; }
+.site-foot .wrap { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.site-foot a { color: var(--ink2); }
+.table-scroll table { min-width: 560px; }
