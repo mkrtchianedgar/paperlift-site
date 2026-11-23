@@ -136,6 +136,6 @@ th { font-weight: 600; }
 
 /* Home: App Store link and the content card */
 .cta { margin: 0 0 1rem; line-height: 1.5; }
-.pill { background: var(--ink); color: var(--card); }
-.pill:hover { text-decoration: underline; }
+.pill.primary { background: var(--ink); color: var(--card); }
+.pill.primary:hover { text-decoration: underline; }
 h2.first { margin-top: 0; }
