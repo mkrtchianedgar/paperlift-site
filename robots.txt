@@ -1,0 +1,6 @@
+# PaperLift: everyone is welcome to read and quote this site,
+# including search engines and AI assistants.
+User-agent: *
+Allow: /
+
+Sitemap: https://paperlift.app/sitemap.xml

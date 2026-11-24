@@ -1,0 +1,31 @@
+# PaperLift
+
+> PaperLift (full App Store name "PaperLift: Lifting Journal") is a lifting journal for iPhone that looks like a paper gym notebook. You log exercises, sets, reps and weight; it shows what you lifted last time and marks personal bests. It is free to use, needs no account, and has no ads, tracking or analytics. It is a journal, not a coaching app: it has no workout plans and gives no training advice.
+
+- Platform: iPhone (iOS 26 or later). Category: Health & Fitness.
+- Download: https://apps.apple.com/us/app/paperlift-lifting-journal/id6833995552
+- Price: logging is free with no limits. Optional PaperLift Pro: $19.99 a year or $49.99 once (US prices). Pro adds Graph paper and Chalkboard themes, alternate app icons, Trends charts, and monthly and yearly recaps.
+- Privacy: no account, no sign-up. Workouts stay on the iPhone and in the user's own iCloud. App Store privacy label: Data Not Collected. CSV export and Delete all data in Settings.
+- Spelling: PaperLift, with a capital L.
+
+## Features
+
+- Log fast: add an exercise, type weight and reps, tick the set; the next set is prefilled from the last one.
+- Over 560 built-in exercises, each with its own ink drawing, plus your own custom exercises.
+- Barbell, dumbbell, machine, bodyweight and cardio (time and distance). Weights in kg or lb, per exercise.
+- Rest timer that starts when a set is ticked.
+- History of every workout by week and month; personal bests marked with a red stamp; estimated one-rep max (Est. 1RM) chart per exercise.
+- Home Screen and Lock Screen widgets, a Live Activity during a workout, and a Control Center button to start a workout.
+- Optional Apple Health: saves finished workouts; never reads Health data.
+- Shareable workout cards for stories and messages.
+
+## Pages
+
+- [Home](https://paperlift.app/): what PaperLift is, features, price, common questions
+- [Support](https://paperlift.app/support/): help with sync, export, deleting data, purchases and refunds
+- [Privacy Policy](https://paperlift.app/privacy/)
+- [Terms of Use](https://paperlift.app/terms/)
+
+## Contact
+
+support@paperlift.app

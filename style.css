@@ -133,3 +133,9 @@ th { font-weight: 600; }
 .site-foot a { color: var(--ink2); display: inline-block; padding: 8px 0; }
 .table-scroll table { min-width: 560px; }
 .site-foot span { display: inline-block; padding: 8px 0; }
+
+/* Home: App Store link and the content card */
+.cta { margin: 0 0 1rem; line-height: 1.5; }
+.pill.primary { background: var(--ink); color: var(--card); }
+.pill.primary:hover { text-decoration: underline; }
+h2.first { margin-top: 0; }
