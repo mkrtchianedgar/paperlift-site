@@ -136,6 +136,7 @@ th { font-weight: 600; }
 
 /* Home: App Store link and the content card */
 .cta { margin: 0 0 1rem; line-height: 1.5; }
-.pill.primary { background: var(--ink); color: var(--card); }
-.pill.primary:hover { text-decoration: underline; }
+/* Apple's official badge, unmodified; 48 px tall (Apple minimum 40 px) */
+.store-badge { display: inline-block; line-height: 0; border-radius: 9px; }
+.store-badge img { display: block; width: auto; height: 48px; }
 h2.first { margin-top: 0; }
