@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["RS7RJYHAKN.app.paperlift.Paperlift"],
+        "components": [
+          { "/": "/w/*", "comment": "A shared workout. The workout is in the #fragment and never reaches this site." },
+          { "/": "/w", "comment": "The same, without the trailing slash." }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+.workout .exercises { list-style: none; padding: 0; margin: 1.5rem 0; border-top: 1px solid var(--rule); }
+.workout .exercises li { padding: .8rem 0; border-bottom: 1px solid var(--rule); }
+.workout .exercises .ex { font-family: var(--serif); font-weight: 600; font-size: 1.15rem; color: var(--ink); }
+.workout .exercises .sets { color: var(--ink2); margin-top: .15rem; }
+.workout .actions { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; margin: 1.5rem 0; }
+.workout .button { display: inline-flex; align-items: center; min-height: 44px; padding: 0 1.4rem; border-radius: 999px;
+  background: var(--ink); color: var(--paper); text-decoration: none; font-weight: 600; }
+.workout .badge img { display: block; }
