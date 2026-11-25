@@ -11,7 +11,7 @@
 ## Features
 
 - Log fast: add an exercise, type weight and reps, tick the set; the next set is prefilled from the last one.
-- Over 560 built-in exercises, each with its own ink drawing, plus your own custom exercises.
+- Over 580 built-in exercises, each with its own ink drawing, plus your own custom exercises. Each one has its own web page with the animated drawing, muscles worked and other names.
 - Barbell, dumbbell, machine, bodyweight and cardio (time and distance). Weights in kg or lb, per exercise.
 - Rest timer that starts when a set is ticked.
 - History of every workout by week and month; personal bests marked with a red stamp; estimated one-rep max (Est. 1RM) chart per exercise.
@@ -22,6 +22,7 @@
 ## Pages
 
 - [Home](https://paperlift.app/): what PaperLift is, features, price, common questions
+- [Exercise library](https://paperlift.app/exercises/): all 587 built-in exercises by body part and equipment; each links to a page like https://paperlift.app/exercises/bench-press/ with an animated drawing, muscles worked, equipment and other names
 - [Support](https://paperlift.app/support/): help with sync, export, deleting data, purchases and refunds
 - [Privacy Policy](https://paperlift.app/privacy/)
 - [Terms of Use](https://paperlift.app/terms/)

@@ -140,3 +140,46 @@ th { font-weight: 600; }
 .store-badge { display: inline-block; line-height: 0; border-radius: 9px; }
 .store-badge img { display: block; width: auto; height: 48px; }
 h2.first { margin-top: 0; }
+
+/* Exercise library (/exercises/) */
+.crumbs { margin: 16px 0 -8px; font-size: 0.9375rem; color: var(--ink2); }
+.crumbs a { color: var(--ink2); display: inline-flex; align-items: center; min-height: 44px; }
+.drawing { margin: 8px 0 16px; background: var(--paper); border-radius: 16px; padding: 8px; max-width: 360px; }
+.drawing svg { display: block; width: 100%; height: auto; }
+.ink-still { display: none; }
+@media (prefers-reduced-motion: reduce) {
+  .ink-anim { display: none; }
+  .ink-still { display: block; }
+}
+.facts { margin: 0 0 16px; font-size: 0.9375rem; }
+.facts div { display: flex; gap: 16px; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--rule); }
+.facts dt { color: var(--ink2); }
+.facts dd { margin: 0; text-align: right; }
+.log-it { background: var(--fill); border-radius: 16px; padding: 16px 20px 4px; margin: 24px 0; }
+.log-it h2 { margin-top: 0; }
+.ex-grid { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(116px, 1fr)); gap: 10px; }
+.ex-grid li { margin: 0; }
+.ex-grid a { display: flex; flex-direction: column; gap: 2px; padding: 8px; border-radius: 12px; background: var(--paper); text-decoration: none; height: 100%; }
+.ex-grid a:hover span { text-decoration: underline; }
+.ex-grid svg { width: 100%; height: auto; aspect-ratio: 1; }
+.ex-grid span { font-weight: 600; font-size: 0.9375rem; line-height: 1.3; }
+.ex-grid small { color: var(--ink2); font-size: 0.8125rem; }
+.jump { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 0; }
+.jump a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 999px; background: var(--fill); text-decoration: none; font-size: 0.9375rem; }
+.count { color: var(--ink2); font-family: var(--sans); font-size: 0.9375rem; font-weight: 400; }
+.ex-list { list-style: none; padding: 0; columns: 2 220px; column-gap: 24px; }
+.ex-list li { break-inside: avoid; margin: 0; }
+.ex-list a { display: inline-flex; align-items: center; min-height: 36px; }
+h2[id] { scroll-margin-top: 16px; }
+
+/* Product Hunt launch note (homepage) */
+.launch-note { display: inline-block; margin: 0; padding: 6px 12px; border: 1px solid var(--rule, rgba(0,0,0,.15)); border-radius: 999px; font-size: 0.9375rem; color: var(--ink2); }
+
+/* Keep logo and three nav links on one row on phones */
+@media (max-width: 420px) {
+  .site-head .wrap { gap: 8px; }
+  .brand { gap: 10px; }
+  .wordmark { font-size: 1.3125rem; }
+  .site-nav { gap: 12px; }
+  .site-nav a { font-size: 0.875rem; }
+}
