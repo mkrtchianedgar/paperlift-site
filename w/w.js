@@ -60,6 +60,20 @@
     }).join(" · ");
   }
 
+  // The sender's theme ("t", the app's stored theme id). Only known ids are used; anything else stays Notebook.
+  var THEMES = {
+    notebook: ["#F7F4EC", "#15181E"], graphPaper: ["#F2F4F0", "#121718"], chalkboard: ["#1C2925", "#1C2925"],
+    leather: ["#EFE4D2", "#1C130D"], kraft: ["#CFB185", "#2A2016"], oxblood: ["#F4E6E1", "#1D0D0D"],
+    black: ["#F1ECE0", "#000000"], canvas: ["#E6DDC8", "#1A1915"]
+  };
+  function setTheme(t) {
+    if (typeof t !== "string" || !Object.prototype.hasOwnProperty.call(THEMES, t)) return;
+    document.documentElement.setAttribute("data-theme", t);
+    var metas = document.querySelectorAll('meta[name="theme-color"]');
+    if (metas[0]) metas[0].setAttribute("content", THEMES[t][0]);
+    if (metas[1]) metas[1].setAttribute("content", THEMES[t][1]);
+  }
+
   async function run() {
     var frag = location.hash.slice(1);
     if (!frag || frag.length > MAX_FRAGMENT) return fail();
@@ -71,6 +85,7 @@
     var w = JSON.parse(json);
     if (!w || typeof w !== "object" || typeof w.n !== "string" || !Array.isArray(w.e) ||
         w.e.length === 0 || w.e.length > MAX_EXERCISES) return fail();
+    setTheme(w.t);
     var unit = (w.v === 2 && w.u === "lb") ? "lb" : "kg";
     var sets = 0, list = $("list");
     w.e.forEach(function (e) {

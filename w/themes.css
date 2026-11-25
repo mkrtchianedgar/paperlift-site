@@ -1,0 +1,21 @@
+/* Shared workout page: the sender's PaperLift theme (link field "t"). Values are the app's own tokens.
+   No "t" or an unknown one: Notebook, i.e. the site's normal colors. */
+:root { --btn: var(--ink); --btn-ink: var(--paper); }
+html[data-theme="notebook"] { --paper: #F7F4EC; --card: #FFFFFF; --ink: #1F2A44; --ink2: #5A6274; --rule: #E9E3D3; --margin: #D64541; --btn: #1F2A44; --btn-ink: #F7F4EC; --fill: #EFE9DA; }
+html[data-theme="graphPaper"] { --paper: #F2F4F0; --card: #FFFFFF; --ink: #26323A; --ink2: #56616B; --rule: #D9E4E1; --margin: #4E9A8E; --btn: #26323A; --btn-ink: #F2F4F0; --fill: #E7ECE8; }
+html[data-theme="chalkboard"] { --paper: #1C2925; --card: #22312C; --ink: #EFEDE4; --ink2: #A8B6AF; --rule: #33463F; --margin: #E79A92; --btn: #EFEDE4; --btn-ink: #1C2925; --fill: #2B3B35; }
+html[data-theme="leather"] { --paper: #EFE4D2; --card: #FBF5EA; --ink: #2E1D12; --ink2: #5E4636; --rule: #D9C6AA; --margin: #A0522D; --btn: #5B3A29; --btn-ink: #F8EEDF; --fill: #E6D5BC; }
+html[data-theme="kraft"] { --paper: #CFB185; --card: #F4E9D4; --ink: #21180E; --ink2: #43321F; --rule: #B8976A; --margin: #1F2A46; --btn: #1F2A46; --btn-ink: #F4E9D4; --fill: #E4CFAA; }
+html[data-theme="oxblood"] { --paper: #F4E6E1; --card: #FFF8F5; --ink: #3A1210; --ink2: #6B4643; --rule: #E3C7BF; --margin: #6E2320; --btn: #6E2320; --btn-ink: #F8E6D6; --fill: #EBD3CC; }
+html[data-theme="black"] { --paper: #F1ECE0; --card: #FBF8F1; --ink: #111111; --ink2: #4F4C47; --rule: #C4BDAD; --margin: #C23B38; --btn: #111111; --btn-ink: #F6F2E8; --fill: #E4DED0; }
+html[data-theme="canvas"] { --paper: #E6DDC8; --card: #F8F4EA; --ink: #26231C; --ink2: #544E40; --rule: #CFC3A8; --margin: #B83C34; --btn: #3F3A2C; --btn-ink: #F8F4EA; --fill: #DBCFB5; }
+@media (prefers-color-scheme: dark) {
+  html[data-theme="notebook"] { --paper: #15181E; --card: #1E222A; --ink: #F2EEE4; --ink2: #A3A8B4; --rule: #2C313B; --margin: #EE6A63; --btn: #F2EEE4; --btn-ink: #15181E; --fill: #2A2F38; }
+  html[data-theme="graphPaper"] { --paper: #121718; --card: #1A2123; --ink: #E6ECEA; --ink2: #9DA9A7; --rule: #263033; --margin: #6CB5A8; --btn: #E6ECEA; --btn-ink: #121718; --fill: #222B2D; }
+  html[data-theme="chalkboard"] { --paper: #1C2925; --card: #22312C; --ink: #EFEDE4; --ink2: #A8B6AF; --rule: #33463F; --margin: #E79A92; --btn: #EFEDE4; --btn-ink: #1C2925; --fill: #2B3B35; }
+  html[data-theme="leather"] { --paper: #1C130D; --card: #2A1D14; --ink: #F3E6D3; --ink2: #C4AE95; --rule: #3A2A1E; --margin: #D08A5E; --btn: #D2A57C; --btn-ink: #1C130D; --fill: #3A2819; }
+  html[data-theme="kraft"] { --paper: #2A2016; --card: #382B1D; --ink: #F2E4CC; --ink2: #CDB592; --rule: #4A3A28; --margin: #9FB0D8; --btn: #C9A472; --btn-ink: #20180F; --fill: #46372A; }
+  html[data-theme="oxblood"] { --paper: #1D0D0D; --card: #2C1615; --ink: #F6E3D8; --ink2: #C9A49C; --rule: #462725; --margin: #E07A72; --btn: #E3A69C; --btn-ink: #1D0D0D; --fill: #3D1F1D; }
+  html[data-theme="black"] { --paper: #000000; --card: #151515; --ink: #F2EFE8; --ink2: #A8A49B; --rule: #3A3A3A; --margin: #E5544F; --btn: #F2EFE8; --btn-ink: #000000; --fill: #262626; }
+  html[data-theme="canvas"] { --paper: #1A1915; --card: #26241E; --ink: #EFE8D6; --ink2: #B9AF98; --rule: #3A372E; --margin: #DD6B63; --btn: #D8CCB0; --btn-ink: #1A1915; --fill: #33302A; }
+}
