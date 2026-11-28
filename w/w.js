@@ -86,7 +86,8 @@
     if (!w || typeof w !== "object" || typeof w.n !== "string" || !Array.isArray(w.e) ||
         w.e.length === 0 || w.e.length > MAX_EXERCISES) return fail();
     setTheme(w.t);
-    var unit = (w.v === 2 && w.u === "lb") ? "lb" : "kg";
+    // Format 3 (plan links, from 1.3) names its unit the same way as format 2.
+    var unit = ((w.v === 2 || w.v === 3) && w.u === "lb") ? "lb" : "kg";
     var sets = 0, list = $("list");
     w.e.forEach(function (e) {
       if (!e || typeof e.n !== "string" || !Array.isArray(e.s) || e.s.length === 0 || e.s.length > MAX_SETS) throw new Error("bad");
